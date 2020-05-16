@@ -33,7 +33,9 @@ Remember, your query should be a query written in the format described below, or
 
 MusicNotes queries are meant to be simple, easy-to-understand things. Here's how to write them.
 
-MusicNotes queries come in three parts: the base note (the base note of the scale), the scale type (major, minor, augmented, diminished), and the note number (we're getting the nth note in the scale).
+MusicNotes queries come in three parts: the base note (the base note of the scale), the scale type (major, minor, augmented, diminished), and the note number (we're getting the nth note in the scale). These three parts are conbined into one to make a query.
+
+Examples: `Csharp`, `Amin3`
 
 #### The Base Note
 
@@ -65,13 +67,13 @@ Here's a diagram of the above conditions:
 
 The note number can take 4 different forms. Here they are:
 
-###### Empty
+###### Leaving it Empty
 
 If you omit the note number, the query will select the entire scale. Remember that major and minor sclaes are 8 notes long, augmented scales are 7 notes long, and diminished scales are 9 notes long.
 
 But what if we only want to get the third note?
 
-###### Specific Numbers
+###### Gettign a Specific Note Number
 
 The last part of a query is the note number. Without it, an entire scale is selected, which may not be what you wanted to get.
 
@@ -80,3 +82,22 @@ The note number can be anything from `0` to `9`, where notes `0` and `1` are equ
 For example, we could write `4` or `6`.
 
 But what if we want the first, third, fifth, seventh, and ninth notes in a scale?
+
+###### Getting Several Numbers with Plus Notation
+
+As we learned at the beginning, we can string several queries together like this: `Cmin1,Cmin3,Cmin5,Cmin7,Cmin9`.
+
+But that's long. What if we wanted to make it shorter? Enter plus notation!
+
+Plus notation turns this: `Cmin1,Cmin3,Cmin5,Cmin7,Cmin9` into this: `Cmin1+3+5+7+9`.
+
+See what we did here? Instead of writing each note number in an individual query, we put them together with `+` signs!
+
+Plus notation is especially useful in this case: `Asharpdim1,Asharpdim3,Asharpdim5,Asharpdim7,Asharpdim9` = `Asharpdim1+3+5+7+9`.
+
+Examples: `D1+3+5`, `Ab3+5+7`.
+
+But what if we want to get `Bflataug1+2+3+4+5+6+7+8+9`? We can't write `Bflataug`, since that only gets notes 1 through 7. However, we can use ...
+
+###### Getting a Range of Number with Dash Notation
+
