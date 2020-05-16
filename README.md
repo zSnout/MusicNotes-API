@@ -115,7 +115,7 @@ Here's the above in a diagram:
 
 Here's a diagram of a query/queries:
 
-![](/assets/diagram.svg)
+![](/assets/query.svg)
 
 <br>
 <br>
