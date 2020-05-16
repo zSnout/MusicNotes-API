@@ -110,10 +110,8 @@ Examples: `B1-5` (`B1+2+3+4+5`), `Cmin2-6` (`Cmin2,Cmin3,Cmin4,Cmin5,Cmin6`).
 <br>
 <br>
 
-To make our query, we combine these three parts into one. Here are some explained examples:
+To make our query, we combine these three parts into one. Here are some examples:
 
- - `B` (`B`, ``, ``)
-   - The `B` selects the `B` scale.
-   - The blank scale type selects the major scale.
-   - The blank note number selects the entire scale.
-   - This will return ``.
+ - `B` (B major scale)
+ - `Dmin` (D minor scale)
+ - `E4` (fourth note in E major scale)
