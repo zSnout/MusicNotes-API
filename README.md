@@ -107,6 +107,16 @@ See what we did here? We took our number set `1+2+3+4+5+6+7+8+9` and (because it
 
 Examples: `B1-5` (`B1+2+3+4+5`), `Cmin2-6` (`Cmin2,Cmin3,Cmin4,Cmin5,Cmin6`).
 
+Here's the above in a diagram:
+
+![](/assets/note-number.svg)
+
+<br>
+
+Here's a diagram of a query/queries:
+
+![](/assets/diagram.svg)
+
 <br>
 <br>
 
@@ -115,3 +125,5 @@ To make our query, we combine these three parts into one. Here are some examples
  - `B` (B major scale)
  - `Dmin` (D minor scale)
  - `E4` (fourth note in E major scale)
+ 
+ ## Hope you have fun with MusicNotes!
