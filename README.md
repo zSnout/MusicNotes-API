@@ -41,4 +41,8 @@ The scale type tells the interpreter which note to output. There are several dif
 
 These are the major scale, the minor scale, the augmented scale, and the diminished scale.
 
-To specify the scale type, simply write `maj` for major, `min` for minor, `aug` for augmented, and `dim` for diminished.
+To specify the scale type, simply write `maj` for major, `min` for minor, `aug` for augmented, and `dim` for diminished. You can also omit it to specify major.
+
+Here's a diagram of the above:
+
+![](/assets/scale-type.svg)
