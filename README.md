@@ -6,14 +6,28 @@ Ready to start using MusicNotes API? Let's get started!
 
 ## We Support...
 
-Currently MusicNotes API is only supported PHP. If you would like to help add support in other languages, please create a pull request.
+Currently MusicNotes API in only written in PHP. If you would like to help add support in other languages, please create a pull request.
 
-## Including MusicNotes API
+## Including The MusicNotes API
 
 To include MusicNotes, you can either:
 
  1. Download and serve MusicNotes yourself. If you choose this option, download [this file](https://github.com/zSnout/MusicNotes-API/blob/master/musicnotes.php).
  2. Send requests to zSnout's server.
+
+When you send a request, it should look something like this:
+
+```
+http://yourdomain.com/path/to/file?(query)
+```
+
+or
+
+```
+https://zsnout.com/note?(query)
+```
+
+Remember, your query should be a query written in the format described below, or several queries joined together with `,`, `?`, `&`, or `:`.
 
 ## Writing Queries
 
@@ -43,6 +57,26 @@ These are the major scale, the minor scale, the augmented scale, and the diminis
 
 To specify the scale type, simply write `maj` for major, `min` for minor, `aug` for augmented, and `dim` for diminished. You can also omit it to specify major.
 
-Here's a diagram of the above:
+Here's a diagram of the above conditions:
 
 ![](/assets/scale-type.svg)
+
+#### The Note Number
+
+The note number can take 4 different forms. Here they are:
+
+###### Empty
+
+If you omit the note number, the query will select the entire scale. Remember that major and minor sclaes are 8 notes long, augmented scales are 7 notes long, and diminished scales are 9 notes long.
+
+But what if we only want to get the third note?
+
+###### Specific Numbers
+
+The last part of a query is the note number. Without it, an entire scale is selected, which may not be what you wanted to get.
+
+The note number can be anything from `0` to `9`, where notes `0` and `1` are equivalent.
+
+For example, we could write `4` or `6`.
+
+But what if we want the first, third, fifth, seventh, and ninth notes in a scale?
