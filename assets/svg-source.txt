@@ -1,0 +1,47 @@
+Diagram(
+    OneOrMore(
+        Sequence(
+            Group(
+                Sequence(
+                    NonTerminal("A-G"),
+                    Optional(
+                        Choice(0,
+                            Terminal("flat"),
+                            Terminal("sharp")
+                        )
+                    )
+                ),
+                "Base Note"
+            ),
+            Group(
+                Optional(
+                    Choice(0,
+                        Terminal("maj"),
+                        Terminal("min"),
+                        Terminal("aug"),
+                        Terminal("dim")
+                    )
+                ),
+                "Scale Type"
+            ),
+            Group(
+                Optional(
+                    Choice(0,
+                        NonTerminal("0-9"),
+                        Sequence(
+                            NonTerminal("0-9"),
+                            Terminal("-"),
+                            NonTerminal("0-9")
+                        ),
+                        OneOrMore(
+                            NonTerminal("0-9"),
+                            "+"
+                        )
+                    )
+                ),
+                "Note Number"
+            )
+        ),
+        ","
+    )
+)
