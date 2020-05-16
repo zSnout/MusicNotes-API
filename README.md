@@ -1,2 +1,2 @@
 # MusicNotes-API
-This repository contains the source code for the MusicNotes API.
+MusicNotes API is an easy way to make musical scales and chords without having to write much code.
