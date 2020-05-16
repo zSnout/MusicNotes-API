@@ -95,9 +95,25 @@ See what we did here? Instead of writing each note number in an individual query
 
 Plus notation is especially useful in this case: `Asharpdim1,Asharpdim3,Asharpdim5,Asharpdim7,Asharpdim9` = `Asharpdim1+3+5+7+9`.
 
-Examples: `D1+3+5`, `Ab3+5+7`.
+Examples: `D1+3+5` (`D1,D3,D5`), `Ab3+5+7` (`Ab3,Ab5,Ab7`).
 
 But what if we want to get `Bflataug1+2+3+4+5+6+7+8+9`? We can't write `Bflataug`, since that only gets notes 1 through 7. However, we can use ...
 
 ###### Getting a Range of Number with Dash Notation
 
+Say we want to get `Bflataug1+2+3+4+5+6+7+8+9`. Dash notation is useful for this, because it allows us to shorten the ending `1+2+3+4+5+6+7+8+9` into `1-9`.
+
+See what we did here? We took our number set `1+2+3+4+5+6+7+8+9` and (because it's also the range of numbers from 1 to 9) turned it into the range `1-9`.
+
+Examples: `B1-5` (`B1+2+3+4+5`), `Cmin2-6` (`Cmin2,Cmin3,Cmin4,Cmin5,Cmin6`).
+
+<br>
+<br>
+
+To make our query, we combine these three parts into one. Here are some explained examples:
+
+ - `B` (`B`, ``, ``)
+   - The `B` selects the `B` scale.
+   - The blank scale type selects the major scale.
+   - The blank note number selects the entire scale.
+   - This will return ``.
