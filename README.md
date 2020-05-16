@@ -20,3 +20,13 @@ To include MusicNotes, you can either:
 MusicNotes queries are meant to be simple, easy-to-understand things. Here's how to write them.
 
 MusicNotes queries come in three parts: the base note (the base note of the scale), the scale type (major, minor, augmented, diminished), and the note number (we're getting the nth note in the scale).
+
+#### The Base Note
+
+A base note consists of two parts: the note and a modifier. For example, in this base note: `Csharp`, the note is `C` and the modifier is `sharp`.
+
+The note can be `A`, `B`, `C`, `D`, `E`, `F`, or `G`, and the modifier can be `flat`, `sharp`, or omitted. You can also use `b` as an alias for `flat`.
+
+To get our base note, simply stick the note and the modifier together, like in these examples: `A` (note A, modifier omitted), `Bb` (note B, modifier b).
+
+Always make sure to capitalize your note so that it gets interpreted correctly.
