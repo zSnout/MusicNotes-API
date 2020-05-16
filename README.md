@@ -30,3 +30,15 @@ The note can be `A`, `B`, `C`, `D`, `E`, `F`, or `G`, and the modifier can be `f
 To get our base note, simply stick the note and the modifier together, like in these examples: `A` (note A, modifier omitted), `Bb` (note B, modifier b).
 
 Always make sure to capitalize your note so that it gets interpreted correctly.
+
+Here's a summary of what we've written here in diagram form:
+
+![](/assets/base-note.svg)
+
+#### The Scale Type
+
+The scale type tells the interpreter which note to output. There are several different types of scales, but MusicNotes supports two common scales, and two less common scales.
+
+These are the major scale, the minor scale, the augmented scale, and the diminished scale.
+
+To specify the scale type, simply write `maj` for major, `min` for minor, `aug` for augmented, and `dim` for diminished.
