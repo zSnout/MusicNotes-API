@@ -10,21 +10,12 @@ Currently MusicNotes API in only written in PHP. If you would like to help add s
 
 ## Including The MusicNotes API
 
-To include MusicNotes, you can either:
-
- 1. Download and serve MusicNotes yourself. If you choose this option, download [this file](https://github.com/zSnout/MusicNotes-API/blob/master/musicnotes.php).
- 2. Send requests to zSnout's server.
+To include MusicNotes, you must download and serve MusicNotes yourself. Use [this file](https://github.com/zSnout/MusicNotes-API/blob/master/musicnotes.php).
 
 When you send a request, it should look something like this:
 
 ```
 http://yourdomain.com/path/to/file?(query)
-```
-
-or
-
-```
-https://zsnout.com/note?(query)
 ```
 
 Remember, your query should be a query written in the format described below, or several queries joined together with `,`, `?`, `&`, or `:`.
